@@ -1,0 +1,16 @@
+{
+  "split": "internal_test",
+  "images": 32,
+  "ground_truth_instances": 882,
+  "predicted_instances": 883,
+  "correctly_numbered_instances": 816,
+  "score_threshold": 0.5,
+  "nms_threshold": null,
+  "unique_fdi": true,
+  "numbered_precision_at_iou50": 0.9241223103057757,
+  "numbered_recall_at_iou50": 0.9251700680272109,
+  "numbered_f1_at_iou50": 0.9246458923512748,
+  "localization_recall_at_iou50": 0.9648526077097506,
+  "fdi_accuracy_on_localized": 0.9447708578143361,
+  "mean_correct_mask_iou": 0.860696828321499
+}

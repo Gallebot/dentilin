@@ -1,0 +1,25 @@
+services:
+  teeth:
+    image: dentilin:local
+    build: .
+    ports:
+      - "127.0.0.1:${DENTILIN_PORT:-8501}:8501"
+    environment:
+      DENTILIN_DEVICE: cpu
+      DENTILIN_MODEL_DIR: /app/models
+      DENTILIN_NUM_THREADS: ${DENTILIN_NUM_THREADS:-4}
+
+    volumes:
+      - ./models:/app/models:ro
+
+    restart: unless-stopped
+  download-model:
+    profiles: [tools]
+    image: dentilin:local
+    build: .
+    entrypoint: [python, tools/download_model.py]
+    command: []
+    environment:
+      DENTILIN_MODEL_DIR: /models
+    volumes:
+      - ./models:/models

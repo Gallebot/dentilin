@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "kind": "teeth",
+  "file": "fdi.pt",
+  "sha256": "f8e714216555922c5683e97ca7e3d247d248d91eac6ec40af8cc739b2dcbfc35",
+  "bytes": 184575209,
+  "num_classes": 33,
+  "input_size": [
+    1024,
+    512
+  ],
+  "url": null
+}

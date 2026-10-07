@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+**/__pycache__
+*.pyc
+**/*.pt
+**/*.tmp
+**/*.download
+.env
+.graphifyignore
+graphify-out
+README.md
+docs
+tests
